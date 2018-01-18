@@ -1,0 +1,31 @@
+{
+  "name": "frontend-starter-kit",
+  "version": "2.0.0",
+  "description": "Front-end starter kit for Asight developers.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/asight/front-end-starter-kit.git"
+  },
+  "author": "Pavel Grishko (pashkella)",
+  "license": "GPL-3.0",
+  "homepage": "https://bitbucket.org/asight/front-end-starter-kit#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-connect": "^5.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "flexboxgrid": "^6.3.1"
+  }
+}

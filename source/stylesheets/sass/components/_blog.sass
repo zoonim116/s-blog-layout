@@ -1,0 +1,49 @@
+.blog
+  padding-top: 57px
+  .blog__description
+    padding-left: 0px
+    position: relative
+  .blog__search
+    padding-right: 0px
+    position: relative
+    text-align: right
+    padding-top: 40px
+    @media only screen and (max-width: 767px)
+      padding-left: 0px
+    input
+      margin-right: 55px
+      padding-right: 35px 
+      @media only screen and (max-width: 1200px)
+        margin-right: 73px
+      @media only screen and (max-width: 767px)
+        margin: 0px
+        padding-right: 111px
+        width: 100%
+        padding-left: 39px
+        font-size: 18px
+        background-position-x: 10px
+        
+.blog__about 
+  font-weight: $light 
+
+.blog__name
+  font-size: $blog-name-fs
+  padding-bottom: 12px
+  @media only screen and (max-width: 767px)
+    padding-left: 55px
+  span
+    display: inline-block
+    font-weight: $light
+    color: $gray-text
+    padding-left: 4px
+
+.blog__avatar
+  position: absolute
+  top: 10px
+  right: -5px
+  img
+    @include border-radius(50%)
+    border: 9px solid $gray
+    display: inline-block
+    width: 116px
+    height: 116px

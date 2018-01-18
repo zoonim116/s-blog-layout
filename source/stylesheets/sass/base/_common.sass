@@ -1,0 +1,55 @@
+body
+	background: $white
+	font-family: $default-f
+	font-size: $default-fs
+	line-height: $default-lh
+	position: relative
+	width: 100%
+	-webkit-tap-highlight-color: transparent
+	color: $black
+html, body
+	height: 100%
+main
+	display: block
+	box-sizing: border-box
+p
+	font-weight: $light
+a
+	text-decoration: none
+	@extend .transition
+	color: $link-color
+img
+	display: block
+	max-width: 100%
+input[type="submit"]
+	@extend .transition
+input, textarea, select
+  outline: none
+  appearance: none
+input
+	font-size: $search-fs
+	font-weight: $light
+	font-style: italic
+	font-family: $default-f
+	background: $gray
+	border: 0px
+	padding: 11px 54px
+	@include border-radius(16px)
+	width: 257px
+	position: relative
+	max-width: 100%
+	letter-spacing: 1px
+	+placeholder
+  color: $gray-text
+input[type="search"]
+	background: url('../images/icons/search.png') $gray
+	background-position: 19px
+	background-repeat: no-repeat
+
+
+// Default elements for extend
+.inline-block
+	display: inline-block
+	vertical-align: top
+.transition
+	+transition(0.3s ease-in-out)

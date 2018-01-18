@@ -1,0 +1,45 @@
+.container
+	box-sizing: border-box
+	padding-left: 60px
+	padding-right: 60px
+	@media only screen and (max-width: 767px)
+		padding-left: 15px
+		padding-right: 15px
+    
+a
+	&:hover
+		opacity: 0.7 
+
+    
+.headline__title
+	font-family: $insta-blog-title-f
+	font-size: $insta-blog-title-fs
+	@media only screen and (max-width: 767px)
+		line-height: normal 
+
+.headline__description
+	padding-top: 6px
+	padding-bottom: 14px
+	
+.slick-dots
+	text-align: left
+	bottom: 3px
+	margin: auto
+	left: -8px
+	right: 0  
+	li
+		margin: 0 3px 
+		button
+			&:before
+				content: ''
+				background: $gray 
+				opacity: 1
+				width: 15px
+				height: 14px  
+	li.slick-active
+		button
+			&:before
+				content: ''
+				background: $red 
+				opacity: 1
+				

@@ -1,0 +1,31 @@
+extends ../layout/base
+
+append config
+	- var pageTitle = 'Home page'
+
+mixin headline(headlineTitle, headlineDescription)
+	div.headline
+		p.headline__title= headlineTitle
+		p.headline__description!= headlineDescription
+
+mixin insta-blog-item(link, imageName, shortDescription)
+	div.col-2.col-xl-4.col-md-6.col-sm-12.insta-blog__item
+		a(href=link)
+			img(src=imageName  alt="img")
+		a(href=link)= shortDescription
+
+mixin gallery-item(link, imageSlider, shortDescription, categorySlider)
+	div.gallery__item
+		img(src=imageSlider  alt="img")
+		div.container
+			div.gallery__item--content
+				p.gallery__item--category= categorySlider
+				a(href=link).gallery__item--title= shortDescription			
+
+block content
+		
+	main
+		include ../components/insta-blog.pug
+		include ../components/gallery.pug
+		include ../components/articles.pug
+							

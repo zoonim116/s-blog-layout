@@ -1,0 +1,14 @@
+extends ../layout/base
+
+append config
+	- var pageTitle = 'Article page'
+
+block content
+
+	main
+		section.breadcrumbs
+			div.container
+				ul
+					li
+						a(href="#") На главную
+		include ../components/article-full.pug

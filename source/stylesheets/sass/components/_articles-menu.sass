@@ -1,0 +1,27 @@
+.articles__menu
+	text-transform: uppercase
+	font-weight: $light
+	padding-top: 21px
+	padding-bottom: 21px
+	
+.articles__menu-name
+	display: inline-block
+	letter-spacing: 1.4px
+	padding-right: 5px
+	
+.articles__menu-list
+	display: inline-block
+	li 
+	 	display: inline-block
+	 	a
+	 		display: block
+	 		letter-spacing: 1.2px
+	 		padding: 4px 12px
+	 	a:hover
+	 		color: $black 
+	li.active
+		a
+			padding: 4px 20px
+			@include border-radius(8px)
+			@include box-shadow(inset, 0px, 2px, 4px, 0px, rgba(0, 0, 0, 0.3))
+			@include linear-gradient(#f0f4f5, #dde1e2)

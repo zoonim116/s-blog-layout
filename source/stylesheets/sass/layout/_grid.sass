@@ -1,0 +1,49 @@
+.container
+	width: $container-width
+	max-width: $container-max-width
+	min-width: $container-min-width
+	margin: 0 auto
+.container-fluid
+	width: $container-fluid-width
+	min-width: $container-fluid-min-width
+	max-width: $container-fluid-max-width
+	margin: 0 auto
+	box-sizing: border-box
+.container-full-width
+	margin: 0 auto
+	box-sizing: border-box
+	width: 100%
+	float: none
+	clear: both
+%clearfix:after
+	display: block
+	clear: both
+	content: ''
+.row 
+	@extend %clearfix
+[class^="col-"]
+	float: $float
+	padding: 0 $gutter
+	box-sizing: border-box
+.hidden
+	display: none
+.text-left
+	text-align: left
+.text-center
+	text-align: center
+.text-right
+	text-align: right
+.left
+	float: left
+.right
+	float: right
+@for $i from 1 through $grid-size
+	.col-#{$i}
+		width:  ( $i /$grid-size ) *100% 
+@each $slug, $size in $breakpoints
+	@media (max-width: #{$size})
+		.hidden-#{$slug}
+			display: none
+		@for $i from 1 through $grid-size
+			.col-#{$slug}-#{$i}
+				width:  ( $i /$grid-size ) *100%
